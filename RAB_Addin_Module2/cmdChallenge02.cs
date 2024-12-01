@@ -66,7 +66,7 @@ namespace RAB_Addin_Module2
             systemCollector.OfClass(typeof(MEPSystem));
 
             //7. get duct system type
-            MEPSystemType ductSystem = GetSystemTypeByName(doc, "Supply Air");
+            MEPSystemType ductSystem = GetSystemTypeByName(doc, "M-DUCT");
 
             // 8 duct type
             FilteredElementCollector ductCollector = new FilteredElementCollector(doc);
@@ -76,7 +76,7 @@ namespace RAB_Addin_Module2
             Curve curCurve4 = AllCurves[2].GeometryCurve;
 
             //10. get pipe system type
-            MEPSystemType pipeSystem = GetSystemTypeByName(doc, "Domestic Hot Water");
+            MEPSystemType pipeSystem = GetSystemTypeByName(doc, "P-PIPE");
 
 
             // 11 pipe type
